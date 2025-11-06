@@ -261,89 +261,31 @@ img {
     margin-top: 25px;
 }
 
-/* --- 申込みフォーム (Action) --- */
-.form-section {
-    background-color: var(--primary-color);
-    color: white;
+/* --- (削除) 以前のフォームスタイル --- */
+/* .form-section や .form-container などの古いCSSは削除しました */
+
+
+/* --- Googleフォーム埋め込みセクション (★追加) --- */
+.google-form-section {
     padding: 60px 20px;
+    background-color: var(--bg-light); /* 背景色を明るいグレーに */
     text-align: center;
 }
 
-.form-section h2 {
+.google-form-section h2 {
     font-size: 2rem;
     margin-bottom: 30px;
+    color: var(--text-dark); /* 見出しの色を濃く */
 }
 
-.form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: white;
-    color: var(--text-dark);
-    padding: 40px;
+.google-form-section iframe {
+    max-width: 100%; /* 横幅がはみ出ないように */
     border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.form-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.form-group label span {
-    background-color: var(--primary-color);
-    color: white;
-    font-size: 0.8em;
-    padding: 2px 8px;
-    border-radius: 3px;
-    margin-left: 8px;
-}
-
-.form-group label span.optional {
-    background-color: #777;
-}
-
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="tel"] {
-    width: 100%;
-    padding: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     border: 1px solid var(--border-color);
-    border-radius: 5px;
-    font-size: 1rem;
-    box-sizing: border-box; /* 幅がはみ出ないように */
+    /* 高さはiframeタグのheight属性で指定されています (2371px) */
 }
 
-.form-container .cta-button {
-    width: 100%;
-    border: none;
-    cursor: pointer;
-}
-
-#formMessage {
-    margin-top: 20px;
-    font-size: 1.1rem;
-    padding: 15px;
-    border-radius: 5px;
-    display: none; /* JSで表示を切り替え */
-}
-
-#formMessage.success {
-    background-color: #d4edda;
-    color: #155724;
-    display: block;
-}
-
-#formMessage.error {
-    background-color: #f8d7da;
-    color: #721c24;
-    display: block;
-}
 
 /* --- 二次CTA (Secondary) --- */
 .secondary-cta {
@@ -412,7 +354,14 @@ footer {
         text-align: center;
         padding: 30px 20px;
     }
-    .form-container {
-        padding: 30px 20px;
+    /* .form-container は削除 */
+
+    /* ★追加 */
+    .google-form-section {
+        padding: 40px 10px; /* スマホでの余白を調整 */
+    }
+    .google-form-section iframe {
+        /* 高さはiframeタグ側で指定されているため、ここでは変更不要 */
+        /* もし高さを変えたい場合は、iframeタグの height="2371" の数値を直接変更するのが確実です */
     }
 }
