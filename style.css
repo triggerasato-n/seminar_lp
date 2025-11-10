@@ -257,6 +257,16 @@ img {
     margin-bottom: 0;
 }
 
+/* ↓↓↓ ここから追加 ↓↓↓ */
+.incentive-box p strong {
+    display: block; /* 強調部分をブロック要素にして改行効果を維持 */
+    font-size: 1.4rem; /* h3より少し小さく、pより大きく */
+    color: #333; /* 読みやすい濃い色に */
+    margin-bottom: 10px; /* 直後の文章との間に少し余白 */
+    text-align: center; /* 中央揃えにして目立たせる */
+}
+/* ↑↑↑ ここまで追加 ↑↑↑ */
+
 
 .incentive-box + .incentive-box {
     margin-top: 25px;
