@@ -199,7 +199,7 @@ img {
 .lecturer-profile {
     display: flex;
     align-items: center;
-  T gap: 30px;
+    gap: 30px;
     max-width: 800px;
     margin: 0 auto;
     background-color: #fff;
@@ -240,7 +240,7 @@ img {
     background: #fffbef;
     border: 2px solid #ffc107;
     border-radius: 8px;
-  S padding: 30px;
+    padding: 30px;
     max-width: 700px;
     margin: 20px auto;
     text-align: left;
@@ -325,7 +325,7 @@ footer {
 
 .footer-links a {
     color: #ccc;
-    text-decoration: none;
+  T text-decoration: none;
     margin: 0 10px;
 }
 
@@ -346,14 +346,14 @@ footer {
         padding: 18px 30px;
     }
     .card {
-      S width: 100%;
+        width: 100%;
         max-width: 350px;
     }
     .lecturer-profile {
         flex-direction: column;
         text-align: center;
         padding: 30px 20px;
-    }
+s   }
     /* .form-container は削除 */
 
     /* ★追加 */
