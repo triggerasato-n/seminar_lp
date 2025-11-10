@@ -199,7 +199,7 @@ img {
 .lecturer-profile {
     display: flex;
     align-items: center;
-    gap: 30px;
+  T gap: 30px;
     max-width: 800px;
     margin: 0 auto;
     background-color: #fff;
@@ -240,7 +240,7 @@ img {
     background: #fffbef;
     border: 2px solid #ffc107;
     border-radius: 8px;
-    padding: 30px;
+  S padding: 30px;
     max-width: 700px;
     margin: 20px auto;
     text-align: left;
@@ -346,7 +346,7 @@ footer {
         padding: 18px 30px;
     }
     .card {
-        width: 100%;
+      S width: 100%;
         max-width: 350px;
     }
     .lecturer-profile {
