@@ -284,6 +284,8 @@ img {
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     border: 1px solid var(--border-color);
+    width: 640px;
+    height: 2500px;
     /* 高さはiframeタグのheight属性で指定されています (2371px) */
 }
 
@@ -362,6 +364,7 @@ footer {
         padding: 40px 10px; /* スマホでの余白を調整 */
     }
     .google-form-section iframe {
+        height: 3500px;
         /* 高さはiframeタグ側で指定されているため、ここでは変更不要 */
         /* もし高さを変えたい場合は、iframeタグの height="2371" の数値を直接変更するのが確実です */
     }
