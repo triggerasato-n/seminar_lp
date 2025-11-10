@@ -249,13 +249,12 @@ img {
 .incentive-box h3 {
     font-size: 1.5rem;
     color: #d39e00;
-    margin-bottom: 5px; /* ★10px から 5px に減らします */
+    margin-bottom: 10px; /* ★10px から 5px に減らします */
 }
 
 .incentive-box p {
     font-size: 1.1rem;
     margin-bottom: 0;
-    margin-top: 0; /* ★これを追加して、<p>タグのデフォルトの上余白を削除 */
 }
 
 /* --- 以前追加した .incentive-box p strong のスタイルを修正 --- */
