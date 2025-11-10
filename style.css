@@ -257,13 +257,15 @@ img {
     margin-bottom: 0;
 }
 
+/* --- 以前追加した .incentive-box p strong のスタイルを修正 --- */
+
 .incentive-box p strong {
-	display: block;      /* 強調部分をブロック要素にして改行 */
-	font-size: 1.25rem;  /* 本文(1.1rem)より少しだけ大きく */
-	font-weight: bold;
-	color: #333;
-	margin-bottom: 0.5em; /* ★ここの余白を 0.5文字分 に縮小 */
-	/* text-align: center; を削除（左揃えに戻す） */
+    font-size: 1.25rem;  /* 本文(1.1rem)より少しだけ大きく */
+    font-weight: bold;
+    color: #333;
+    /* display: block; を削除 */
+    /* margin-bottom: 0.5em; を削除 */
+    /* text-align: center; を削除 */
 }
 
 .incentive-box + .incentive-box {
