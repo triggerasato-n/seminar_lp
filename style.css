@@ -249,12 +249,13 @@ img {
 .incentive-box h3 {
     font-size: 1.5rem;
     color: #d39e00;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .incentive-box p {
     font-size: 1.1rem;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .incentive-box + .incentive-box {
