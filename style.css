@@ -257,14 +257,6 @@ img {
     margin-bottom: 0;
 }
 
-.incentive-box h4.incentive-catch {
-    font-size: 1.4rem;  /* h3より少し小さく、pより大きく */
-    font-weight: bold;   /* 太字（強調） */
-    color: #333;        /* 読みやすい濃い色に */
-    text-align: center;  /* 中央揃えにして目立たせる */
-    margin-top: 5px;
-    margin-bottom: 15px; /* 下の<p>タグとの間に余白を確保 */
-}
 
 .incentive-box + .incentive-box {
     margin-top: 25px;
