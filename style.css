@@ -39,10 +39,43 @@ img {
 
 /* --- ヘッダー (ファーストビュー) --- */
 .hero {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
+    /* background-color: var(--primary-color); */ /* ← 変更：背景色を削除(コメントアウト) */
+    background-image: url('icon.jpg'); /* ★追加：ぼかし非対応ブラウザ用の背景 */
+    background-size: cover; /* ★追加 */
+    background-position: center center; /* ★追加 */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative; /* ★追加：オーバーレイの基準にする */
+    z-index: 1; /* ★追加：コンテンツ(文字)を前面に出す */
+    overflow: hidden; /* ★追加：ぼかしがはみ出ないようにする */
+}
+
+/* ★追加：ぼかし用の背景レイヤー */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -5px; /* ぼかしの端が切れないよう少し拡大 */
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background-image: url('icon.jpg'); /* ★ぼかす画像 */
+    background-size: cover;
+    background-position: center center;
+    filter: blur(5px); /* ★ここでぼかしを適用 (数値で強さを調整) */
+    z-index: -2; /* ★一番背面に配置 */
+}
+
+/* ★追加：テキストを読みやすくする暗いオーバーレイ */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* ★暗さ(0.4)を調整 */
+    z-index: -1; /* ★背景とコンテンツの間に配置 */
 }
 
 .hero h1 {
