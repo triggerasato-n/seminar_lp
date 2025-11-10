@@ -301,7 +301,7 @@ img {
 
 .secondary-cta a {
     color: var(--primary-color);
-    font-weight: bold;
+  t-weight: bold;
     text-decoration: underline;
 }
 
