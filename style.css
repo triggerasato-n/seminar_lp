@@ -8,6 +8,12 @@
     --border-color: #ddd;
 }
 
+/* ▼▼▼ 【重要】レイアウト崩れを防ぐための設定を追加 ▼▼▼ */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/* ▲▲▲ 追加ここまで ▲▲▲ */
+
 body {
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     margin: 0;
@@ -74,6 +80,9 @@ img {
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     transition: transform 0.2s, box-shadow 0.2s;
+    /* スマホでの崩れ防止のため、共通設定として以下を追加 */
+    max-width: 100%;
+    text-align: center;
 }
 
 .cta-button:hover {
@@ -257,34 +266,28 @@ img {
     margin-bottom: 0;
 }
 
-
 .incentive-box + .incentive-box {
     margin-top: 25px;
 }
 
-/* --- (削除) 以前のフォームスタイル --- */
-/* .form-section や .form-container などの古いCSSは削除しました */
-
-
-/* --- Googleフォーム埋め込みセクション (★追加) --- */
+/* --- Googleフォーム埋め込みセクション --- */
 .google-form-section {
     padding: 60px 20px;
-    background-color: var(--bg-light); /* 背景色を明るいグレーに */
+    background-color: var(--bg-light);
     text-align: center;
 }
 
 .google-form-section h2 {
     font-size: 2rem;
     margin-bottom: 30px;
-    color: var(--text-dark); /* 見出しの色を濃く */
+    color: var(--text-dark);
 }
 
 .google-form-section iframe {
-    max-width: 100%; /* 横幅がはみ出ないように */
+    max-width: 100%;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     border: 1px solid var(--border-color);
-    /* 高さはiframeタグのheight属性で指定されています (2371px) */
 }
 
 
@@ -343,17 +346,17 @@ footer {
         font-size: 1.1rem;
     }
 
-    /* ▼▼▼ ここから修正 ▼▼▼ */
+    /* ▼▼▼ スマホ用ボタンの修正 ▼▼▼ */
     .cta-button {
-        font-size: 1.2rem;
-        padding: 18px 30px;
+        font-size: 1.1rem; /* 少し文字サイズを小さくして改行を綺麗に */
+        padding: 18px 20px; /* 左右の余白を少し減らす */
         
-        /* スマホでボタン内のテキストがはみ出ないように改行を許可 */
-        white-space: normal; 
-        
-        /* ボタンが画面幅いっぱいに広がらないよう、適度な幅に設定 */
-        width: 90%; 
+        white-space: normal; /* 改行を許可 */
+        width: 90%; /* 幅を画面の90%に制限 */
         max-width: 400px;
+        display: block;
+        margin: 0 auto; /* 中央寄せ */
+        line-height: 1.4; /* 行間を少し広げて読みやすく */
     }
     /* ▲▲▲ 修正ここまで ▲▲▲ */
 
@@ -366,27 +369,8 @@ footer {
         text-align: center;
         padding: 30px 20px;
     }
-    /* .form-container は削除 */
-
-    /* ★追加 */
+    
     .google-form-section {
-        padding: 40px 10px; /* スマホでの余白を調整 */
-    }
-    .google-form-section iframe {
-        /* 高さはiframeタグ側で指定されているため、ここでは変更不要 */
-        /* もし高さを変えたい場合は、iframeタグの height="2371" の数値を直接変更するのが確実です */
+        padding: 40px 10px;
     }
 }
-```
-
-**主な修正点:**
-
-`style.css`の**316行目あたり**、`@media (max-width: 768px)`内の`.cta-button`に以下の3行を追加しました。
-
-```css
-        /* スマホでボタン内のテキストがはみ出ないように改行を許可 */
-        white-space: normal; 
-        
-        /* ボタンが画面幅いっぱいに広がらないよう、適度な幅に設定 */
-        width: 90%; 
-        max-width: 400px;
