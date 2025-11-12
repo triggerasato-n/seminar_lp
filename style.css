@@ -46,7 +46,7 @@ img {
 /* --- ヘッダー (ファーストビュー) --- */
 .hero {
     /* background-color: var(--primary-color); */ /* 元の背景色をコメントアウト */
-    background-image: url('icon.jpg'); /* icon.jpgを背景に設定 */
+    /* background-image: url('icon.jpg'); /* icon.jpgを背景に設定 */ */
     background-size: cover; /* 画像をセクション全体に拡大・縮小 */
     background-position: center; /* 画像を中央に配置 */
     position: relative; /* 擬似要素の基準とする */
