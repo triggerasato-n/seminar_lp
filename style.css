@@ -45,22 +45,41 @@ img {
 
 /* --- ヘッダー (ファーストビュー) --- */
 .hero {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */ /* 元の背景色をコメントアウトまたは削除 */
+    background-image: url('icon.jpg'); /* icon.jpgを背景に設定 */
+    background-size: cover; /* 画像をセクション全体に拡大・縮小 */
+    background-position: center; /* 画像を中央に配置 */
+    position: relative; /* 擬似要素の基準とする */
+    overflow: hidden; /* ぼかした画像がはみ出さないように */
     color: white;
     padding: 60px 20px;
     text-align: center;
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('icon.jpg'); /* 擬似要素にも同じ画像を適用 */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* ここでぼかし効果を追加 */
+    z-index: -1; /* コンテンツの下に配置 */
+}
+
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7); /* テキストを見やすくするために影を濃くする */
 }
 
 .hero .subtitle {
     font-size: 1.3rem;
     font-weight: bold;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* 背景色の透明度を上げてテキストを見やすく */
     color: var(--primary-color);
     display: inline-block;
     padding: 5px 15px;
