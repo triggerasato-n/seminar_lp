@@ -45,7 +45,7 @@ img {
 
 /* --- ヘッダー (ファーストビュー) --- */
 .hero {
-    /* background-color: var(--primary-color); */ /* 元の背景色をコメントアウトまたは削除 */
+    /* background-color: var(--primary-color); */ /* 元の背景色をコメントアウト */
     background-image: url('icon.jpg'); /* icon.jpgを背景に設定 */
     background-size: cover; /* 画像をセクション全体に拡大・縮小 */
     background-position: center; /* 画像を中央に配置 */
@@ -66,7 +66,7 @@ img {
     background-image: url('icon.jpg'); /* 擬似要素にも同じ画像を適用 */
     background-size: cover;
     background-position: center;
-    filter: blur(100px); /* ここでぼかし効果を追加 */
+    filter: blur(5px); /* ここでぼかし効果を追加 (5pxは調整可能) */
     z-index: -1; /* コンテンツの下に配置 */
 }
 
