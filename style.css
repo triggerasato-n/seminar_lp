@@ -65,7 +65,7 @@ img {
     background-image: url('icon.jpg'); /* 擬似要素にも同じ画像を適用 */
     background-size: cover;
     background-position: center;
-    filter: blur(50px); /* ここでぼかし効果を追加 (5pxは調整可能) */
+    filter: blur(10px); /* ここでぼかし効果を追加 (5pxは調整可能) */
     z-index: -1; /* コンテンツの下に配置 */
 }
 
