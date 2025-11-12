@@ -1,265 +1,265 @@
 /* --- 基本スタイル --- */
 :root {
-    --primary-color: #00729c; /* 信頼感のある紺色 */
-    --cta-color: #ff6600; /* 目立つオレンジ */
-    --bg-light: #f4f7f6;
-    --text-dark: #333;
-    --text-light: #555;
-    --border-color: #ddd;
+    --primary-color: #00729c; /* 信頼感のある紺色 */
+    --cta-color: #ff6600; /* 目立つオレンジ */
+    --bg-light: #f4f7f6;
+    --text-dark: #333;
+    --text-light: #555;
+    --border-color: #ddd;
 }
 
 body {
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.7;
-    color: var(--text-dark);
-    background-color: #fff;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    color: var(--text-dark);
+    background-color: #fff;
 }
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 h1, h2, h3 {
-    margin-top: 0;
-    line-height: 1.3;
+    margin-top: 0;
+    line-height: 1.3;
 }
 
 p {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /* --- ヘッダー (ファーストビュー) --- */
 .hero {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .hero .subtitle {
-    font-size: 1.3rem;
-    font-weight: bold;
-    background-color: #fff;
-    color: var(--primary-color);
-    display: inline-block;
-    padding: 5px 15px;
-    border-radius: 5px;
-    margin-bottom: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #fff;
+    color: var(--primary-color);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
 }
 
 /* --- CTAボタン (共通) --- */
 .cta-button {
-    display: inline-block;
-    background-color: var(--cta-color);
-    color: white!important;
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding: 20px 40px;
-    text-decoration: none;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-block;
+    background-color: var(--cta-color);
+    color: white!important;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 20px 40px;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 /* --- 悩み・共感 (Agitation) --- */
 .problems {
-    background-color: var(--bg-light);
-    padding: 50px 0;
+    background-color: var(--bg-light);
+    padding: 50px 0;
 }
 
 .problems h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 40px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
 }
 
 .problem-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card {
-    background-color: white;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    width: 280px;
-    padding: 20px;
-    text-align: center;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    width: 280px;
+    padding: 20px;
+    text-align: center;
 }
 
 .card img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
 }
 
 .card h3 {
-    font-size: 1.2rem;
-    color: var(--primary-color);
+    font-size: 1.2rem;
+    color: var(--primary-color);
 }
 
 .agitation-lead {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 40px;
-    padding: 0 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 40px;
+    padding: 0 20px;
 }
 
 /* --- 解決策 (Solution) --- */
 .solution {
-    padding: 50px 0;
-    text-align: center;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .solution h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .solution-lead {
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto 30px auto;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
 }
 
 .agenda-box {
-    background-color: white;
-    border: 2px dashed var(--primary-color);
-    border-radius: 8px;
-    padding: 30px;
-    max-width: 700px;
-    margin: 30px auto;
-    text-align: left;
+    background-color: white;
+    border: 2px dashed var(--primary-color);
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 700px;
+    margin: 30px auto;
+    text-align: left;
 }
 
 .agenda-box h3 {
-    text-align: center;
-    font-size: 1.4rem;
-    margin-top: 0;
-    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 .agenda-box ul {
-    list-style: none;
-    padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 .agenda-box li {
-    font-size: 1.1rem;
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 15px;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
 }
 
 .agenda-box li::before {
-    content: '✔';
-    color: var(--cta-color);
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-    top: 0;
+    content: '✔';
+    color: var(--cta-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 /* --- 講師紹介 (Trust) --- */
 .lecturer {
-    background-color: var(--bg-light);
-    padding: 50px 0;
+    background-color: var(--bg-light);
+    padding: 50px 0;
 }
 
 .lecturer h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 40px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
 }
 
 .lecturer-profile {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .lecturer-profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .lecturer-info h3 {
-    font-size: 1.4rem;
-    margin-bottom: 5px;
-    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    color: var(--primary-color);
 }
 
 .lecturer-info p {
-    margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 /* --- 特典 (Incentives) --- */
 .incentives {
-    padding: 50px 0;
-    text-align: center;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .incentives h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 .incentive-box {
-    background: #fffbef;
-    border: 2px solid #ffc107;
-    border-radius: 8px;
-    padding: 30px;
-    max-width: 700px;
-    margin: 20px auto;
-    text-align: left;
+    background: #fffbef;
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: left;
 }
 
 .incentive-box h3 {
-    font-size: 1.5rem;
-    color: #d39e00;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #d39e00;
+    margin-bottom: 10px;
 }
 
 .incentive-box p {
-    font-size: 1.1rem;
-    margin-bottom: 0;
+    font-size: 1.1rem;
+    margin-bottom: 0;
 }
 
 
 .incentive-box + .incentive-box {
-    margin-top: 25px;
+    margin-top: 25px;
 }
 
 /* --- (削除) 以前のフォームスタイル --- */
@@ -268,114 +268,114 @@ img {
 
 /* --- Googleフォーム埋め込みセクション (★追加) --- */
 .google-form-section {
-    padding: 60px 20px;
-    background-color: var(--bg-light); /* 背景色を明るいグレーに */
-    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--bg-light); /* 背景色を明るいグレーに */
+    text-align: center;
 }
 
 .google-form-section h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: var(--text-dark); /* 見出しの色を濃く */
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--text-dark); /* 見出しの色を濃く */
 }
 
 .google-form-section iframe {
-    max-width: 100%; /* 横幅がはみ出ないように */
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border: 1px solid var(--border-color);
-    /* 高さはiframeタグのheight属性で指定されています (2371px) */
+    max-width: 100%; /* 横幅がはみ出ないように */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid var(--border-color);
+    /* 高さはiframeタグのheight属性で指定されています (2371px) */
 }
 
 
 /* --- 二次CTA (Secondary) --- */
 .secondary-cta {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: var(--bg-light);
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--bg-light);
 }
 
 .secondary-cta p {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
 
 .secondary-cta a {
-    color: var(--primary-color);
-    font-weight: bold;
-    text-decoration: underline;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .secondary-cta small {
-    display: block;
-    margin-top: 15px;
-    color: var(--text-light);
+    display: block;
+    margin-top: 15px;
+    color: var(--text-light);
 }
 
 /* --- フッター --- */
 footer {
-    text-align: center;
-    padding: 30px 20px;
-    background-color: #333;
-    color: #aaa;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #333;
+    color: #aaa;
 }
 
 .footer-links {
-    margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .footer-links a {
-    color: #ccc;
-    text-decoration: none;
-    margin: 0 10px;
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
 .footer-links a:hover {
-    text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* --- レスポンシブ対応 --- */
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-    .hero .subtitle {
-        font-size: 1.1rem;
-    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero .subtitle {
+        font-size: 1.1rem;
+    }
 
-    /* ▼▼▼ ここから修正 ▼▼▼ */
-    .cta-button {
-        font-size: 1.2rem;
-        padding: 18px 30px;
-        
-        /* スマホでボタン内のテキストがはみ出ないように改行を許可 */
-        white-space: normal; 
-        
-        /* ボタンが画面幅いっぱいに広がらないよう、適度な幅に設定 */
-        width: 90%; 
-        max-width: 400px;
-    }
-    /* ▲▲▲ 修正ここまで ▲▲▲ */
+    /* ▼▼▼ ここから修正 ▼▼▼ */
+    .cta-button {
+        font-size: 1.2rem;
+        padding: 18px 30px;
+        
+        /* スマホでボタン内のテキストがはみ出ないように改行を許可 */
+        white-space: normal; 
+        
+        /* ボタンが画面幅いっぱいに広がらないよう、適度な幅に設定 */
+        width: 90%; 
+        max-width: 400px;
+    }
+    /* ▲▲▲ 修正ここまで ▲▲▲ */
 
-    .card {
-        width: 100%;
-        max-width: 350px;
-    }
-    .lecturer-profile {
-        flex-direction: column;
-        text-align: center;
-        padding: 30px 20px;
-    }
-    /* .form-container は削除 */
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+    .lecturer-profile {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    /* .form-container は削除 */
 
-    /* ★追加 */
-    .google-form-section {
-        padding: 40px 10px; /* スマホでの余白を調整 */
-    }
-    .google-form-section iframe {
-        /* 高さはiframeタグ側で指定されているため、ここでは変更不要 */
-        /* もし高さを変えたい場合は、iframeタグの height="2371" の数値を直接変更するのが確実です */
-    }
+    /* ★追加 */
+    .google-form-section {
+        padding: 40px 10px; /* スマホでの余白を調整 */
+    }
+    .google-form-section iframe {
+        /* 高さはiframeタグ側で指定されているため、ここでは変更不要 */
+        /* もし高さを変えたい場合は、iframeタグの height="2371" の数値を直接変更するのが確実です */
+    }
 }
 ```
 
@@ -384,9 +384,9 @@ footer {
 `style.css`の**316行目あたり**、`@media (max-width: 768px)`内の`.cta-button`に以下の3行を追加しました。
 
 ```css
-        /* スマホでボタン内のテキストがはみ出ないように改行を許可 */
-        white-space: normal; 
-        
-        /* ボタンが画面幅いっぱいに広がらないよう、適度な幅に設定 */
-        width: 90%; 
-        max-width: 400px;
+        /* スマホでボタン内のテキストがはみ出ないように改行を許可 */
+        white-space: normal; 
+        
+        /* ボタンが画面幅いっぱいに広がらないよう、適度な幅に設定 */
+        width: 90%; 
+        max-width: 400px;
